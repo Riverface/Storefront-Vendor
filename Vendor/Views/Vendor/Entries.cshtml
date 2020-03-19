@@ -1,0 +1,14 @@
+@using VendorTracker.Models;
+<h1></h1>
+Welcome!
+<ul>
+    @foreach(Vendor vend in Model){
+    <il>@vend.ID</il>
+
+        <il>@vend.Name</il>
+        <il><a href="/Vendor/@vend.ID"> @vend.Name </a></il>
+        <il>@vend.Address</il>
+    }
+</ul>
+
+<a href="/Vendor/new">Add a new opening.</a> 

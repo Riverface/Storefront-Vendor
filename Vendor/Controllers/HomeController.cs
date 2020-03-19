@@ -1,4 +1,4 @@
-using Vendor.Models;
+using VendorTracker.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 namespace FriendLetter.Controllers

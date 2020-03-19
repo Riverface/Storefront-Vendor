@@ -1,71 +1,48 @@
 using System;
 using System.Collections.Generic;
 
-namespace Vendor.Models
+namespace VendorTracker.Models
 {
     public class Vendor
     {
-        static List<Vendor> Instances_ = new List<Vendor>();
-        static int IDQueue = 1;
+        static public List<Vendor> _Instances = new List<Vendor>();
         public int ID;
-        public List<Item> ItemMenu;
-        public Vendor()
+        public List<Item> Items;
+        public string Name;
+        public string Address;
+        public Vendor(string name, string address)
         {
-            ItemMenu = new List<Item>();
-            ID = IDQueue;
-            IDQueue++;
+            Items = new List<Item>();
+            Name = name;
+            Address = address;
+            _Instances.Add(this);
+            ID = _Instances.Count;
         }
-
 
         public float CountVendorTotal(bool usingCpns = false)
         {
             float workingTotal = 0;
-            foreach (Item thing in ItemMenu)
+            foreach (Item thing in Items)
             {
                 workingTotal += thing.Total;
             }
             return workingTotal;
         }
-        public void AddItem(string name, string itemDesc, float individualPrice, string Plural = null)
+        public void AddItem(Item toAdd)
         {
-            ItemMenu.Add(new Item(name, itemDesc, individualPrice, 1));
+            Items.Add(toAdd);
         }
-    }
-    public class Item
-    {
-        static int IDQueue = 1;
-        public int ID;
-        public string Tag;
-        public float PricePer;
-        public int Amount;
-        public float Total;
-        public string ItemDesc;
-        public string Plural;
-
-        public Item(string name, string itemDesc, float individualPrice, int quantity = 1)
+        public static List<Vendor> GetAll()
         {
-            Tag = name;
-            PricePer = individualPrice;
-            Amount = quantity;
-            Total = PricePer * quantity;
-            ItemDesc = itemDesc;
-            ID = IDQueue;
-            IDQueue++;
+            return _Instances;
         }
-
-        public Item(string name, string itemDesc, float individualPrice, int quantity = 1, string plural = "")
+        public static void ClearAll()
         {
-            Tag = name;
-            PricePer = individualPrice;
-            Amount = quantity;
-            Total = PricePer * quantity;
-            ItemDesc = itemDesc;
-            Plural = plural;
+            _Instances = new List<Vendor>();
+            
         }
-
-        public float CountItemTotal()
-        {
-            return PricePer * Amount;
+        public static Vendor GetByID(int id){
+            return _Instances[id-1];
         }
     }
 }

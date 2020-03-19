@@ -12163,17 +12163,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Schoolstuff\\Vendor\\Vendor\\Bplate.csproj",
-      "projectName": "Bplate",
-      "projectPath": "d:\\Schoolstuff\\Vendor\\Vendor\\Bplate.csproj",
+      "projectUniqueName": "D:\\Schoolstuff\\Storefront-Vendor\\Vendor\\Vendor.csproj",
+      "projectName": "Vendor",
+      "projectPath": "D:\\Schoolstuff\\Storefront-Vendor\\Vendor\\Vendor.csproj",
       "packagesPath": "C:\\Users\\Akigawa\\.nuget\\packages\\",
-      "outputPath": "d:\\Schoolstuff\\Vendor\\Vendor\\obj\\",
+      "outputPath": "D:\\Schoolstuff\\Storefront-Vendor\\Vendor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "D:\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Akigawa\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"

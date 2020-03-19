@@ -1,23 +1,25 @@
-using Vendor.Models;
+using VendorTracker.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
-namespace Vendor.Controllers
+namespace VendorTracker.Controllers
 {
     public class ItemController : Controller
     {
 
-        [HttpGet("/Vendor/{ID}/Item")]
-        public ActionResult Item(){
+        [HttpGet("/Vendor/{Vid}/Item")]
+        public ActionResult Item(int VId){
             
             return View();
         }
-        [HttpGet("/Vendor/{ID}/Item/New")]
-        public ActionResult NewItem(){
+        [HttpGet("/Vendor/{Vid}/Item/New")]
+        public ActionResult NewItem(int VId){
+        
         return  View();
         }
 
-        [HttpPost("/Vendor/{ID}/Item/")]
-        public ActionResult CreateItem(){
+        [HttpPost("/Vendor/{Vid}/Item/")]
+        public ActionResult CreateItem(int VId){
+
         return RedirectToAction("Item");
         }
     }
