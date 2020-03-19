@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Schoolstuff\\Storefront-Vendor\\Vendor\\Vendor.csproj": {}
+    "D:\\Schoolstuff\\Storefront-Vendor\\vendor\\Vendor.csproj": {}
   },
   "projects": {
-    "D:\\Schoolstuff\\Storefront-Vendor\\Vendor\\Vendor.csproj": {
+    "D:\\Schoolstuff\\Storefront-Vendor\\vendor\\Vendor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Schoolstuff\\Storefront-Vendor\\Vendor\\Vendor.csproj",
+        "projectUniqueName": "D:\\Schoolstuff\\Storefront-Vendor\\vendor\\Vendor.csproj",
         "projectName": "Vendor",
-        "projectPath": "D:\\Schoolstuff\\Storefront-Vendor\\Vendor\\Vendor.csproj",
+        "projectPath": "D:\\Schoolstuff\\Storefront-Vendor\\vendor\\Vendor.csproj",
         "packagesPath": "C:\\Users\\Akigawa\\.nuget\\packages\\",
-        "outputPath": "D:\\Schoolstuff\\Storefront-Vendor\\Vendor\\obj\\",
+        "outputPath": "D:\\Schoolstuff\\Storefront-Vendor\\vendor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
