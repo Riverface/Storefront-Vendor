@@ -1,30 +1,15 @@
 @using VendorTracker.Models;
+
 <head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" href="~/css/Master.css" type="text/css">
-</head>
-<body style="background-image: image('~/img/space.gif')">
-    
-<div class="jumbotron">
-<h1>Welcome!</h1>
-
-</div>
-
-<ul>
-    @foreach(Vendor vend in Model){
-       @Html.Raw(" <div class='animated'>")
-            
-            <div class="entryLabel">Vendor ID: @vend.ID</div>
-           @Html.Raw(" <div class='entry'>")
-        <ul>Name: <a href="/Vendor/Show/@vend.ID"> @vend.Name </a></ul>
-        <ul>Address: @vend.Address</ul>
-        <ul>Monthly order: $@vend.CountVendorTotal()</ul> 
-       @Html.Raw(" </div'></div>")
-        
-    }
-</ul>
-<div class="remote">
-
-<a href="/Vendor/new">Add a new opening.</a> 
-</div>
-</body>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="~/css/Master.css" type="text/css">
+		</head>
+		<body style="background-image: image('~/img/space.gif')">
+			<div class="jumbotron">
+				<h1>Welcome!</h1>
+			</div>
+			<ul></ul>
+			<div class="remote">
+				<a href="/Vendors/new">Add a new opening.</a>
+			</div>
+		</body>

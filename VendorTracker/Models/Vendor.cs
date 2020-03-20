@@ -7,12 +7,12 @@ namespace VendorTracker.Models
     {
         static public List<Vendor> _Instances = new List<Vendor>();
         public int ID;
-        public List<Item> Items;
+        public List<Order> Orders;
         public string Name;
         public string Address;
         public Vendor(string name, string address)
         {
-            Items = new List<Item>();
+            Orders = new List<Order>();
             Name = name;
             Address = address;
             _Instances.Add(this);
@@ -22,15 +22,15 @@ namespace VendorTracker.Models
         public float CountVendorTotal(bool usingCpns = false)
         {
             float workingTotal = 0;
-            foreach (Item thing in Items)
+            foreach (Order thing in Orders)
             {
                 workingTotal += thing.Total;
             }
             return workingTotal;
         }
-        public void AddItem(Item toAdd)
+        public void AddOrder(Order toAdd)
         {
-            Items.Add(toAdd);
+            Orders.Add(toAdd);
         }
         public static List<Vendor> GetAll()
         {

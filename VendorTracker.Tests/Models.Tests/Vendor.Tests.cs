@@ -44,12 +44,12 @@ namespace VendorTracker.Tests
             Assert.AreEqual(testVendor3.ID, Vendor._Instances[3].ID);
         }
         [TestMethod]
-        public void Vendor_AcceptsItems_Object()
+        public void Vendor_AcceptsOrders_Object()
         {
             Vendor testVendor = new Vendor("Fat Todd's", "10592 NE de   ad squirrel road");
-            Item testItem3 = new Item("Cinnamon Roll", "It's a cinnamon roll.", 2.50F, 1);
-            testVendor.Items.Add(testItem3);
-            Assert.AreEqual(testVendor.Items[0].ID, testItem3.ID);
+            Order testOrder3 = new Order("Cinnamon Roll", "It's a cinnamon roll.", 2.50F, 1);
+            testVendor.Orders.Add(testOrder3);
+            Assert.AreEqual(testVendor.Orders[0].ID, testOrder3.ID);
         }
     }
 }

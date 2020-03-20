@@ -8,7 +8,7 @@ namespace FriendLetter.Controllers
 
         [HttpGet("/")]
         public ActionResult Index(){
-            return RedirectToAction("List", "Vendor");
+            return View();
         }
     }
 }

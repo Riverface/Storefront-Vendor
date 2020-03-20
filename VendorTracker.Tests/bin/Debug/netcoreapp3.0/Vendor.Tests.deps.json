@@ -11,7 +11,7 @@
           "MSTest.TestAdapter": "1.2.0",
           "MSTest.TestFramework": "1.2.0",
           "Microsoft.NET.Test.Sdk": "15.0.0",
-          "Vendor": "1.0.0"
+          "VendorTracker": "1.0.0"
         },
         "runtime": {
           "Vendor.Tests.dll": {}
@@ -1311,9 +1311,9 @@
           }
         }
       },
-      "Vendor/1.0.0": {
+      "VendorTracker/1.0.0": {
         "runtime": {
-          "Vendor.dll": {}
+          "VendorTracker.dll": {}
         }
       }
     }
@@ -2045,7 +2045,7 @@
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
     },
-    "Vendor/1.0.0": {
+    "VendorTracker/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

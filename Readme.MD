@@ -14,14 +14,14 @@ Vendor Class
 
 * Program should be able to Create a new Vendor
     * Program should keep new Vendors in a list, with unique IDs
-    * Program should have a list of Items the vendor will purchase for the monthh
-    * Program should count up Total based on all of the Totals in the Vendor's item list
+    * Program should have a list of Orders the vendor will purchase for the monthh
+    * Program should count up Total based on all of the Totals in the Vendor's Order list
 
-Item Class
-* Program should Create a new item
-    * Program should keep new items in a list, with unique IDs, for use in multiple vendors.
+Order Class
+* Program should Create a new Order
+    * Program should keep new Orders in a list, with unique IDs, for use in multiple vendors.
     * Program should be able to count up a total based on the price and quantity
-    * Program should have a way to Add an item to a vendor
+    * Program should have a way to Add an Order to a vendor
 
 ## Setup/Installation Requirements
 
@@ -29,9 +29,9 @@ Item Class
 * _dotnet run in terminal_
 * _Open Localhost:5001_
 * _Use menus to create new Vendor entries_
-* _Click Vendor to go to items Vendor is ordering_
-* _Click Create Item, add details on page._
-* _The site will automatically calculate the totals of the Items as well as how much the Vendor will pay in total_
+* _Click Vendor to go to Orders Vendor is ordering_
+* _Click Create Order, add details on page._
+* _The site will automatically calculate the totals of the Orders as well as how much the Vendor will pay in total_
 
 ## Known Bugs
 
