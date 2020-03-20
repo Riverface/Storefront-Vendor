@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\Schoolstuff\\Storefront-Vendor\\Vendor\\Vendor.csproj",
+  "FilePath": "d:\\Schoolstuff\\VendorTracker.solution\\VendorTracker\\VendorTracker.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2958,33 +2958,7 @@
     ],
     "CSharpLanguageVersion": 703
   },
-  "RootNamespace": "Vendor",
-  "Documents": [
-    {
-      "FilePath": "d:\\Schoolstuff\\Storefront-Vendor\\Vendor\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Schoolstuff\\Storefront-Vendor\\Vendor\\Views\\Item\\NewItem.cshtml",
-      "TargetPath": "Views\\Item\\NewItem.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Schoolstuff\\Storefront-Vendor\\Vendor\\Views\\Vendor\\Entries.cshtml",
-      "TargetPath": "Views\\Vendor\\Entries.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Schoolstuff\\Storefront-Vendor\\Vendor\\Views\\Vendor\\NewVendor.cshtml",
-      "TargetPath": "Views\\Vendor\\NewVendor.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Schoolstuff\\Storefront-Vendor\\Vendor\\Views\\Vendor\\ShowVendor.cshtml",
-      "TargetPath": "Views\\Vendor\\ShowVendor.cshtml",
-      "FileKind": "mvc"
-    }
-  ],
+  "RootNamespace": null,
+  "Documents": [],
   "SerializationFormat": "0.2"
 }
