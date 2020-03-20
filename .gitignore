@@ -1,2 +1,5 @@
-/bin/
-/obj/
+/VendorTracker.Test/bin/
+/VendorTracker.Tests/obj/
+/VendorTracker/bin/
+/VendorTracker/obj/
+/.vscode/
