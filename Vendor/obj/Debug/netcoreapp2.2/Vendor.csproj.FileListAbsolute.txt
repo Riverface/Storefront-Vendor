@@ -20,6 +20,7 @@ D:\Schoolstuff\Storefront-Vendor\Vendor\bin\Debug\netcoreapp2.2\Vendor.Views.dll
 D:\Schoolstuff\Storefront-Vendor\Vendor\bin\Debug\netcoreapp2.2\Vendor.Views.pdb
 D:\Schoolstuff\Storefront-Vendor\Vendor\obj\Debug\netcoreapp2.2\Vendor.Views.pdb
 D:\Schoolstuff\Storefront-Vendor\Vendor\obj\Debug\netcoreapp2.2\Vendor.csproj.CopyComplete
-D:\Schoolstuff\Storefront-Vendor\Vendor\obj\Debug\netcoreapp2.2\Razor\Views\Item\Item.cshtml.g.cs
 D:\Schoolstuff\Storefront-Vendor\Vendor\obj\Debug\netcoreapp2.2\Razor\Views\Vendor\NewVendor.cshtml.g.cs
 D:\Schoolstuff\Storefront-Vendor\Vendor\obj\Debug\netcoreapp2.2\Razor\Views\Vendor\Entries.cshtml.g.cs
+D:\Schoolstuff\Storefront-Vendor\Vendor\obj\Debug\netcoreapp2.2\Razor\Views\Vendor\ShowVendor.cshtml.g.cs
+D:\Schoolstuff\Storefront-Vendor\Vendor\obj\Debug\netcoreapp2.2\Razor\Views\Item\NewItem.cshtml.g.cs

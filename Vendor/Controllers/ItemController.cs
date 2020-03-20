@@ -5,22 +5,17 @@ namespace VendorTracker.Controllers
 {
     public class ItemController : Controller
     {
-
-        [HttpGet("/Vendor/{Vid}/Item")]
-        public ActionResult Item(int VId){
-            
-            return View();
-        }
-        [HttpGet("/Vendor/{Vid}/Item/New")]
-        public ActionResult NewItem(int VId){
         
-        return  View();
+
+        [HttpGet("/Vendor/{VId}/Item/New")]
+        public ActionResult NewItem(int VId){
+        return  View(Vendor.GetByID(VId));
         }
 
-        [HttpPost("/Vendor/{Vid}/Item/")]
-        public ActionResult CreateItem(int VId){
-
-        return RedirectToAction("Item");
+        [HttpPost("/Vendor/{VId}/")]
+        public ActionResult CreateItem(int VId, string name, string itemDesc, float individualPrice, int quantity){
+        Vendor.GetByID(VId).AddItem(new Item(name, itemDesc, individualPrice, quantity));
+        return RedirectToAction("Show", "Vendor", new {id = VId});
         }
     }
 }

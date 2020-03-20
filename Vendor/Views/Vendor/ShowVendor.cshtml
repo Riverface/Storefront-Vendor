@@ -1,0 +1,40 @@
+@using VendorTracker.Models
+<head>
+    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="~/css/Master.css" type="text/css">
+</head>
+<div class="jumbotron">
+<h1>Name: @Model.Name </h1>
+<h3> Address: @Model.Address</h3>
+</div>
+
+
+
+
+
+       <div id='entries'>
+  Items:
+
+@foreach(Item item in Model.Items){
+    <div>
+<div class='entryLabel'>
+   <ul>@item.Name </ul>
+
+    </div>
+   <div class="entry" style="height: auto">
+        <ul>Description: @item.ItemDesc</ul>
+        <ul>Price: <br>$@item.PricePer x @item.Amount @item.Name <br>=<br> $@item.CountItemTotal()</ul>
+   </div>
+    </div>
+}
+
+<ul>Total:$@Model.CountVendorTotal()</ul>
+          
+          </div>
+
+<div class="remote animated">
+    
+<a href="/Vendor/list">Back to main menu</a><br>
+<a href="/Vendor/@Model.ID/Item/New">Add a new Item</a>
+</div>

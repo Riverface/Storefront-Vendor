@@ -26,20 +26,6 @@ namespace VendorTracker.Models
             ID = _Instances.Count;
 
         }
-
-        public Item(string name, string itemDesc, float individualPrice, int quantity = 1, string plural = "")
-        {
-            Name = name;
-            PricePer = individualPrice;
-            Amount = quantity;
-            Total = PricePer * quantity;
-            ItemDesc = itemDesc;
-            Plural = plural;
-            _Instances.Add(this);
-            ID = _Instances.Count;
-
-        }
-
         public float CountItemTotal()
         {
             return PricePer * Amount;

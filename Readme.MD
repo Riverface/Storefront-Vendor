@@ -39,7 +39,12 @@ Item Class
 
 ## Technologies Used
 
-_C#, ASP.NET, MSTest, Visual Studio Code_
+_C#, 
+ASP.NET, 
+MSTest, 
+Visual Studio Code, 
+Bootstrap,
+[Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P)_
 
 ### License
 
