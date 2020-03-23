@@ -14,7 +14,7 @@ Vendor Class
 
 * Program should be able to Create a new Vendor
     * Program should keep new Vendors in a list, with unique IDs
-    * Program should have a list of Orders the vendor will purchase for the monthh
+    * Program should have a list of Orders the vendor will purchase for the month
     * Program should count up Total based on all of the Totals in the Vendor's Order list
 
 Order Class
