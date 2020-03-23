@@ -10,6 +10,7 @@ namespace VendorTracker.Models
         public List<Order> Orders;
         public string Name;
         public string Address;
+        
         public Vendor(string name, string address)
         {
             Orders = new List<Order>();
@@ -28,22 +29,25 @@ namespace VendorTracker.Models
             }
             return workingTotal;
         }
+        
         public void AddOrder(Order toAdd)
         {
             Orders.Add(toAdd);
         }
+        
         public static List<Vendor> GetAll()
         {
             return _Instances;
         }
+        
         public static void ClearAll()
         {
             _Instances = new List<Vendor>();
-            
         }
-        public static Vendor GetByID(int id){
+
+        public static Vendor GetByID(int id)
+        {
             return _Instances[id-1];
         }
     }
 }
-

@@ -1,13 +1,15 @@
 using VendorTracker.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
+
 namespace FriendLetter.Controllers
 {
     public class HomeController : Controller
     {
 
         [HttpGet("/")]
-        public ActionResult Index(){
+        public ActionResult Index()
+        {
             return View();
         }
     }

@@ -3,8 +3,6 @@
 @{
   Layout = "_Layout";
 }
-<body style="background-image: image('~/img/space.gif')">
-    
 <div class="jumbotron">
 <h1>Welcome!</h1>
 
@@ -13,7 +11,6 @@
     @foreach(Vendor vend in Model)
     {
         <div class='animated'>
-            
             <div class="entryLabel">Vendor ID: @vend.ID</div>
             <div class='entry'>
                 <ul>Name: <a href="/Vendors/Show/@vend.ID"> @vend.Name </a></ul>
@@ -27,4 +24,3 @@
 
 <a href="/Vendors/new">Add a new opening.</a> 
 </div>
-</body>

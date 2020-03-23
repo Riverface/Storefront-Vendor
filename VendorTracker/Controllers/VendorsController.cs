@@ -1,6 +1,7 @@
 using VendorTracker.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
+
 namespace VendorTracker.Controllers
 {
     public class VendorsController : Controller
@@ -11,6 +12,7 @@ namespace VendorTracker.Controllers
         {
             return View(Vendor._Instances);
         }
+
         [HttpGet("/Vendors/new")]
         public ActionResult NewVendor()
         {
@@ -23,10 +25,12 @@ namespace VendorTracker.Controllers
             Vendor tempVendor = new Vendor(name, address);
             return RedirectToAction("Index");
         }
+
         [HttpGet("/Vendors/Show/{ID}")]
-        public ActionResult ShowVendor(int id){
-        Vendor foundVendor = Vendor.GetByID(id);
-        return View(foundVendor);
+        public ActionResult ShowVendor(int id)
+        {
+            Vendor foundVendor = Vendor.GetByID(id);
+            return View(foundVendor);
         }
     }
 }
