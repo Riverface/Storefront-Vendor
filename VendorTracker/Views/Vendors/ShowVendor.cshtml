@@ -1,45 +1,31 @@
 @using VendorTracker.Models
 
-
-<head>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<link rel="stylesheet" href="~/css/Master.css" type="text/css">
-		</head>
-		<div class="jumbotron">
-			<h1>Name: @Model.Name </h1>
-			<h3> Address: @Model.Address</h3>
-		</div>
-		<div id='entries'>
-  Orders:
-
-@foreach(Order Order in Model.Orders){
-    
-			
-			<div>
-				<div class='entryLabel'>
-					<ul>@Order.Name </ul>
-				</div>
-				<div class="entry" style="height: auto">
-					<ul>Description: @Order.OrderDesc</ul>
-					<ul>Price: 
-						
-						<br>$@Order.PricePer x @Order.Amount @Order.Name 
-							
-							<br>=
-								
-								<br> $@Order.CountOrderTotal()
-								
-								</ul>
-							</div>
-						</div>
-}
-
-
-						
-						<ul>Total:$@Model.CountVendorTotal()</ul>
-					</div>
-					<div class="remote animated">
-						<a href="/Vendors/">Back to main menu</a>
-						<br>
-							<a href="/Vendors/@Model.ID/Orders/New">Add a new Order</a>
-						</div>
+<div class="jumbotron">
+   <h1>Name: @Model.Name </h1>
+   <h3> Address: @Model.Address</h3>
+</div>
+<div id='entries'>
+   Orders:
+   @foreach(Order Order in Model.Orders)
+   {
+   <div>
+      <div class='entryLabel'>
+         <ul>@Order.Name </ul>
+      </div>
+      <div class="entry" style="height: auto">
+         <ul>Description: @Order.OrderDesc</ul>
+         <ul>Price: 
+            <br>$@Order.PricePer x @Order.Amount @Order.Name 
+            <br>=
+            <br> $@Order.CountOrderTotal()
+         </ul>
+      </div>
+   </div>
+   }
+   <ul>Total:$@Model.CountVendorTotal()</ul>
+</div>
+<div class="remote animated">
+   <a href="/Vendors/">Back to main menu</a>
+   <br>
+   <a href="/Vendors/@Model.ID/Orders/New">Add a new Order</a>
+</div>
