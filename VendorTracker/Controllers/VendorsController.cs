@@ -26,8 +26,8 @@ namespace VendorTracker.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpGet("/Vendors/Show/{ID}")]
-        public ActionResult ShowVendor(int id)
+        [HttpGet("/Vendors/{ID}")]
+        public ActionResult Show(int id)
         {
             Vendor foundVendor = Vendor.GetByID(id);
             return View(foundVendor);
