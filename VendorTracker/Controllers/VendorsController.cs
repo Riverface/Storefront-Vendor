@@ -14,19 +14,19 @@ namespace VendorTracker.Controllers
         }
 
         [HttpGet("/Vendors/new")]
-        public ActionResult NewVendor()
+        public ActionResult New()
         {
             return View();
         }
 
         [HttpPost("/Vendors/")]
-        public ActionResult CreateVendor(string name, string address)
+        public ActionResult Create(string name, string address)
         {
             Vendor tempVendor = new Vendor(name, address);
             return RedirectToAction("Index");
         }
 
-        [HttpGet("/Vendors/{ID}")]
+        [HttpGet("/Vendors/{id}")]
         public ActionResult Show(int id)
         {
             Vendor foundVendor = Vendor.GetByID(id);

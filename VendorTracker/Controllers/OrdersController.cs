@@ -6,17 +6,17 @@ namespace VendorTracker.Controllers
 {
     public class OrdersController : Controller
     {
-        [HttpGet("/Vendors/{ID}/Orders/New")]
-        public ActionResult NewOrder(int ID)
+        [HttpGet("/Vendors/{id}/Orders/New")]
+        public ActionResult New(int id)
         {
-            return  View(Vendor.GetByID(ID));
+            return  View(Vendor.GetByID(id));
         }
 
-        [HttpPost("/Vendors/{ID}/")]
-        public ActionResult CreateOrder(int ID, string name, string orderDesc, float indiIDualPrice, int quantity)
+        [HttpPost("/Vendors/{id}/")]
+        public ActionResult Create(int id, string name, string orderDesc, float individualPrice, int quantity)
         {
-            Vendor.GetByID(ID).AddOrder(new Order(name, orderDesc, indiIDualPrice, quantity));
-            return RedirectToAction("Show", "Vendors", new {id = ID});
+            Vendor.GetByID(id).AddOrder(new Order(name, orderDesc, individualPrice, quantity));
+            return RedirectToAction("Show", "Vendors", new {id});
         }
     }
 }
